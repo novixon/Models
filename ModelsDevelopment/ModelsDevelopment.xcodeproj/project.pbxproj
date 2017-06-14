@@ -15,6 +15,15 @@
 		D5A0889A1EF18284001EDF83 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D5A088981EF18284001EDF83 /* LaunchScreen.storyboard */; };
 		D5A088A51EF18284001EDF83 /* ModelsDevelopmentTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5A088A41EF18284001EDF83 /* ModelsDevelopmentTests.swift */; };
 		D5A088B01EF18284001EDF83 /* ModelsDevelopmentUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5A088AF1EF18284001EDF83 /* ModelsDevelopmentUITests.swift */; };
+		D5A088C41EF18795001EDF83 /* TableViewCellModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5A088C31EF18795001EDF83 /* TableViewCellModel.swift */; };
+		D5A088C51EF18795001EDF83 /* TableViewCellModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5A088C31EF18795001EDF83 /* TableViewCellModel.swift */; };
+		D5A088C61EF18795001EDF83 /* TableViewCellModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5A088C31EF18795001EDF83 /* TableViewCellModel.swift */; };
+		D5A088C81EF18E51001EDF83 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5A088C71EF18E51001EDF83 /* TableViewCell.swift */; };
+		D5A088C91EF18E51001EDF83 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5A088C71EF18E51001EDF83 /* TableViewCell.swift */; };
+		D5A088CA1EF18E51001EDF83 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5A088C71EF18E51001EDF83 /* TableViewCell.swift */; };
+		D5A088CC1EF18F1D001EDF83 /* TableViewCellFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5A088CB1EF18F1D001EDF83 /* TableViewCellFactory.swift */; };
+		D5A088CD1EF18F1D001EDF83 /* TableViewCellFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5A088CB1EF18F1D001EDF83 /* TableViewCellFactory.swift */; };
+		D5A088CE1EF18F1D001EDF83 /* TableViewCellFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5A088CB1EF18F1D001EDF83 /* TableViewCellFactory.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +58,9 @@
 		D5A088AB1EF18284001EDF83 /* ModelsDevelopmentUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ModelsDevelopmentUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D5A088AF1EF18284001EDF83 /* ModelsDevelopmentUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelsDevelopmentUITests.swift; sourceTree = "<group>"; };
 		D5A088B11EF18284001EDF83 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D5A088C31EF18795001EDF83 /* TableViewCellModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCellModel.swift; sourceTree = "<group>"; };
+		D5A088C71EF18E51001EDF83 /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
+		D5A088CB1EF18F1D001EDF83 /* TableViewCellFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCellFactory.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +91,7 @@
 		D5A088801EF18284001EDF83 = {
 			isa = PBXGroup;
 			children = (
+				D5A088C11EF1834B001EDF83 /* Source */,
 				D5A0888B1EF18284001EDF83 /* ModelsDevelopment */,
 				D5A088A31EF18284001EDF83 /* ModelsDevelopmentTests */,
 				D5A088AE1EF18284001EDF83 /* ModelsDevelopmentUITests */,
@@ -126,6 +139,25 @@
 				D5A088B11EF18284001EDF83 /* Info.plist */,
 			);
 			path = ModelsDevelopmentUITests;
+			sourceTree = "<group>";
+		};
+		D5A088C11EF1834B001EDF83 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				D5A088C21EF1834B001EDF83 /* TableView */,
+			);
+			name = Source;
+			path = ../Source;
+			sourceTree = "<group>";
+		};
+		D5A088C21EF1834B001EDF83 /* TableView */ = {
+			isa = PBXGroup;
+			children = (
+				D5A088C71EF18E51001EDF83 /* TableViewCell.swift */,
+				D5A088C31EF18795001EDF83 /* TableViewCellModel.swift */,
+				D5A088CB1EF18F1D001EDF83 /* TableViewCellFactory.swift */,
+			);
+			path = TableView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -259,9 +291,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D5A088CC1EF18F1D001EDF83 /* TableViewCellFactory.swift in Sources */,
+				D5A088C81EF18E51001EDF83 /* TableViewCell.swift in Sources */,
 				D5A088951EF18284001EDF83 /* ModelsDevelopment.xcdatamodeld in Sources */,
 				D5A0888F1EF18284001EDF83 /* ViewController.swift in Sources */,
 				D5A0888D1EF18284001EDF83 /* AppDelegate.swift in Sources */,
+				D5A088C41EF18795001EDF83 /* TableViewCellModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -269,7 +304,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D5A088CD1EF18F1D001EDF83 /* TableViewCellFactory.swift in Sources */,
+				D5A088C91EF18E51001EDF83 /* TableViewCell.swift in Sources */,
 				D5A088A51EF18284001EDF83 /* ModelsDevelopmentTests.swift in Sources */,
+				D5A088C51EF18795001EDF83 /* TableViewCellModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -277,7 +315,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D5A088CE1EF18F1D001EDF83 /* TableViewCellFactory.swift in Sources */,
+				D5A088CA1EF18E51001EDF83 /* TableViewCell.swift in Sources */,
 				D5A088B01EF18284001EDF83 /* ModelsDevelopmentUITests.swift in Sources */,
+				D5A088C61EF18795001EDF83 /* TableViewCellModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
